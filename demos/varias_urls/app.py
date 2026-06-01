@@ -19,7 +19,7 @@ class Clientes:
         return str(render.clientes())
 class Usuario:
     def GET(self):
-        return str(render.usuario())   
+        return str(render.usuarios())   
     
 if __name__ == "__main__":
     app.run()
