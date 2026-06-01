@@ -1,18 +1,25 @@
+
 import web
 
 urls = (
-    '/', 'Index'
-    '/Clientes', 'Clientes'
-    )
+    '/', 'Index',
+    '/Clientes', 'Clientes',
+    '/Usuario','Usuario',
+)
 app = web.application(urls, globals())
+render = web.template.render('templates/')
 
 class Index:
     def GET(self):
-        return 'Hola mundo desde web.py'
-    
+        return str(render.index())
+   
+
 class Clientes:
-    def GET(SELF):
-        return 'Esta es la pagina de Clientes'
+    def GET(self):
+        return str(render.clientes())
+class Usuario:
+    def GET(self):
+        return str(render.usuario())   
     
 if __name__ == "__main__":
     app.run()
