@@ -4,7 +4,7 @@ import web
 urls = (
     '/', 'Index',
     '/Clientes', 'Clientes',
-    '/Usuario','Usuario',
+    '/Usuarios','Usuarios',
 )
 app = web.application(urls, globals())
 render = web.template.render('templates/')
