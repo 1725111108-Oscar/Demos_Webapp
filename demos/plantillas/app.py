@@ -10,8 +10,8 @@ render = web.template.render('templates/')
 class Index:
     def GET(self):
         return str(render.index())
-   
 
+   
 class Clientes:
     def GET(self):
         return str(render.clientes())
