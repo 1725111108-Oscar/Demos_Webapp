@@ -1,8 +1,8 @@
 import web
 urls = (
     '/', 'Index',
-    '/Clientes', 'Clientes',
-    '/Usuario','Usuario',
+    '/ulientes', 'Clientes',
+    '/usuarios','Usuarios',
 )
 app = web.application(urls, globals())
 render = web.template.render('templates/')
@@ -17,7 +17,7 @@ class Clientes:
         return str(render.clientes())
 class Usuario:
     def GET(self):
-        return str(render.usuario())   
+        return str(render.usuarios())   
      
 if __name__ == "__main__":
     app.run()
