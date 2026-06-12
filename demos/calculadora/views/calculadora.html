@@ -21,11 +21,16 @@ $def with(numero_1, numero_2, resultado)
 
 
             <label>Resultado :</label>
-            <input type="operacion" name="resultado" id="resultado" value=$resultado><br>
-            <button name="operacion" id="operacion">Sumar</button>
-            <button name="operacion" id="operacion">restar</button>
-            <button name="operacion" id="operacion">multiplicar</button>
-            <button name="operacion" id="operacion">raiz</button>
+            <input type="number" name="resultado" id="resultado" value=$resultado><br>
+
+            <button name="operacion" id="operacion" value="Sumar">Sumar</button>
+            <button name="operacion" id="operacion" value="restar">Restar</button>
+            <button name="operacion" id="operacion" value="multiplicar">Multiplicar</button>
+            <button name="operacion" id="operacion" value="dividir">Dividir</button>
+            <button name="operacion" id="operacion" value="raiz cuadrada">Raiz cuadrada</button>
+            <button name="operacion" id="operacion" value="potencia">Potencia</button>
+            <button name="operacion" id="operacion" value="modulo">Modulo</button>
+            <button type="reset" onclick="window.location.href=window.location.href">Limpiar</button>
         </form>
     </body>
 </html>
